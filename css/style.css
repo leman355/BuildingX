@@ -1,0 +1,214 @@
+.myContainer {
+  width: 75%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#header .headerTop {
+  background-color: #002040;
+}
+
+#header .headerTop p {
+  color: white;
+  margin: 0;
+  font-size: 15px;
+}
+
+#header .headerTop .iconBox i {
+  padding: 7px;
+  border-left: 2px solid #002E5B;
+  color: white;
+}
+
+#header .headerTop .iconBox i:last-child {
+  border-right: 2px solid #002E5B;
+}
+
+#header .headerMiddle {
+  background-color: #002E5B;
+  color: white;
+  font-size: 15px;
+}
+
+#header .headerMiddle .logo {
+  padding: 15px;
+}
+
+#header .headerMiddle i {
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+#header .headerMiddle .number {
+  margin-right: 15px;
+}
+
+#header .headerMiddle .number h6 {
+  margin-bottom: 0;
+}
+
+#header .headerMiddle .number p {
+  margin-bottom: 0;
+}
+
+#header .headerBottom {
+  background-color: #FFB600;
+  position: relative;
+}
+
+#header .headerBottom .bottomContainer {
+  width: 35%;
+  margin: auto;
+}
+
+#header .headerBottom .bottomContainer ul li {
+  padding: 15px 0;
+}
+
+#header .headerBottom .bottomContainer ul li a {
+  padding: 18px 0;
+  position: relative;
+  color: #002040;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#header .headerBottom .bottomContainer ul li a i {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+#header .headerBottom .bottomContainer ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 5px;
+  background-color: #002040;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#header .headerBottom .bottomContainer ul li a:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+#header .headerBottom .bottomContainer ul li.serv {
+  position: relative;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services {
+  border-top: 5px solid #002E5B;
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 200px;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services li {
+  padding: 7px 15px;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services li a {
+  font-weight: 500;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services li a:hover {
+  color: #002E5B;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services li a::before {
+  content: none;
+}
+
+#header .headerBottom .bottomContainer ul li.serv .services li:first-child {
+  border-bottom: 1px solid #a5a4a4;
+}
+
+#header .headerBottom .bottomContainer ul li.serv:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages {
+  position: absolute;
+  top: 70%;
+  left: 13%;
+  width: 75%;
+  border-top: 5px solid #002E5B;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li {
+  margin: 5px 0px;
+  border-left: 1px solid #a5a4a4;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li a {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li a:last-child {
+  margin-right: 150px;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li a:hover {
+  color: #002E5B;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li a::before {
+  content: none;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li:first-child {
+  border-left: none;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li ul li {
+  margin: 0;
+  padding: 7px 0;
+  border: none;
+}
+
+#header .headerBottom .bottomContainer ul li.page .pages li ul li a {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#header .headerBottom .bottomContainer ul li.page:hover .pages {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.construction {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../photo/1.jpg);
+}
+/*# sourceMappingURL=style.css.map */

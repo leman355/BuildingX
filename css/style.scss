@@ -1,0 +1,189 @@
+@import "_variable";
+
+
+.myContainer {
+    width: 75%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+
+#header {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    .headerTop {
+        background-color: $midnight;
+        p {
+            color: $white;
+            margin: 0;
+            font-size: 15px;
+        }
+        .iconBox {
+            i {
+                padding: 7px;
+                border-left: 2px solid $darkblue;
+                color: $white;
+                &:last-child {
+                    border-right: 2px solid $darkblue;
+                }
+            }
+        }
+    }
+    .headerMiddle {
+        background-color: $darkblue;
+        color: $white;
+        font-size: 15px;
+        .logo {
+            padding: 15px;
+        }
+        i {
+            font-size: 25px;
+            padding: 0 10px;
+        }
+        .number {
+            margin-right: 15px;
+            h6 {
+                margin-bottom: 0;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .headerBottom {
+        background-color: $yellow;
+        position: relative;
+        .bottomContainer {
+            width: 35%;
+            margin: auto;
+            ul {
+                li {
+                    padding: 15px 0;
+                    a {
+                        padding: 18px 0;
+                        position: relative;
+                        color: $midnight;
+                        font-weight: bold;
+                        font-size: 14px;
+                        i {
+                            margin-left: 5px;
+                            font-size: 12px;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            width: 0%;
+                            height: 5px;
+                            background-color: $midnight;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                                left: 0%;
+                            }
+                        }
+                    }
+                    &.serv {
+                        position: relative;
+                        .services {
+                            border-top: 5px solid $darkblue;
+                            position: absolute;
+                            top: 70%;
+                            left: 0%;
+                            width: 200px;
+                            background-color: white;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.5s ease-in-out;
+                            li {
+                                padding: 7px 15px;
+                                a {
+                                    font-weight: 500;
+                                    transition: 0.2s ease-in;
+                                    &:hover {
+                                        color: $darkblue;
+                                    }
+                                    &::before {
+                                        content: none;
+                                    }
+                                }
+                                &:first-child {
+                                    border-bottom: 1px solid $gray;
+                                }
+                            }
+                        }
+                        &:hover {
+                            ul {
+                                opacity: 1;
+                                visibility: visible;
+                                top: 100%;
+                            }
+                        }
+                    }
+                    &.page {
+                        .pages {
+                            position: absolute;
+                            top: 70%;
+                            left: 13%;
+                            width: 75%;
+                            border-top: 5px solid $darkblue;
+                            background-color: $white;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.3s ease-in-out;
+                            li {
+                                margin: 5px 0px;
+                                border-left: 1px solid $gray;
+                                a {
+                                    margin-left: 30px;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    transition: 0.2s ease-in;
+                                    &:last-child {
+                                        margin-right: 150px;
+                                    }
+                                    &:hover {
+                                        color: $darkblue;
+                                    }
+                                    &::before {
+                                        content: none;
+                                    }
+                                }
+                                &:first-child {
+                                    border-left: none;
+                                }
+                                ul {
+                                    li {
+                                        margin: 0;
+                                        padding: 7px 0;
+                                        border: none;
+                                        a {
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                            }
+                        }
+                        &:hover {
+                            .pages {
+                                top: 100%;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------- header end ------------
+
