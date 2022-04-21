@@ -19,7 +19,6 @@ window.onscroll = function () {
     }
 }
 
-let management1 = document.querySelector(".construction .management1")
 let management2 = document.querySelector(".construction .management1 .management2")
 
 let a = 0

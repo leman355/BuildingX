@@ -242,10 +242,10 @@ a {
 
 .construction {
   position: relative;
-  height: 85vh;
 }
 
 .construction .management1 {
+  padding: 300px 0;
   background-image: url(http://www.themesindustry.com/html/buildingx/images/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
