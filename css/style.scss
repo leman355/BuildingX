@@ -1,6 +1,5 @@
 @import "_variable";
 
-
 .myContainer {
     width: 75%;
     margin: auto;
@@ -52,16 +51,23 @@ a {
         }
     }
     .headerBottom {
+        width: 100%;
         background-color: $yellow;
         position: relative;
+        .logo {
+            overflow: hidden;
+            opacity: 0;
+            width: 15%;
+        }
         .bottomContainer {
-            width: 35%;
+            width: 45%;
             margin: auto;
             ul {
+                margin: 0;
                 li {
-                    padding: 15px 0;
+                    padding: 20px 0;
                     a {
-                        padding: 18px 0;
+                        padding: 23px 0;
                         position: relative;
                         color: $midnight;
                         font-weight: bold;
@@ -80,7 +86,9 @@ a {
                             background-color: $midnight;
                             transition: 0.3s ease-in-out;
                         }
-                        &:hover {
+                    }
+                    &:hover {
+                        a {
                             &::before {
                                 width: 100%;
                                 left: 0%;
@@ -182,8 +190,24 @@ a {
                 }
             }
         }
+        .iconBox {
+            overflow: hidden;
+            opacity: 0;
+            width: 11%;
+            i {
+                margin-left: 10px;
+                border-radius: 5mm;
+                transition: 0.3s ease;
+                padding: 8px;
+                &:hover{
+                    background-color: $white;
+                    &:first-child{
+                        padding: 5px 8px;
+                    }
+                }
+            }
+        }
     }
 }
 
 // ------- header end ------------
-

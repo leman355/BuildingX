@@ -59,21 +59,32 @@ a {
 }
 
 #header .headerBottom {
+  width: 100%;
   background-color: #FFB600;
   position: relative;
 }
 
+#header .headerBottom .logo {
+  overflow: hidden;
+  opacity: 0;
+  width: 15%;
+}
+
 #header .headerBottom .bottomContainer {
-  width: 35%;
+  width: 45%;
   margin: auto;
 }
 
+#header .headerBottom .bottomContainer ul {
+  margin: 0;
+}
+
 #header .headerBottom .bottomContainer ul li {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 #header .headerBottom .bottomContainer ul li a {
-  padding: 18px 0;
+  padding: 23px 0;
   position: relative;
   color: #002040;
   font-weight: bold;
@@ -97,7 +108,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-#header .headerBottom .bottomContainer ul li a:hover::before {
+#header .headerBottom .bottomContainer ul li:hover a::before {
   width: 100%;
   left: 0%;
 }
@@ -206,9 +217,25 @@ a {
   visibility: visible;
 }
 
-.construction {
-  width: 100%;
-  height: 80vh;
-  background-image: url(../photo/1.jpg);
+#header .headerBottom .iconBox {
+  overflow: hidden;
+  opacity: 0;
+  width: 11%;
+}
+
+#header .headerBottom .iconBox i {
+  margin-left: 10px;
+  border-radius: 5mm;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 8px;
+}
+
+#header .headerBottom .iconBox i:hover {
+  background-color: white;
+}
+
+#header .headerBottom .iconBox i:hover:first-child {
+  padding: 5px 8px;
 }
 /*# sourceMappingURL=style.css.map */
